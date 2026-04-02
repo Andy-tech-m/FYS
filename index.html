@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FYS Mecánica Industrial | Ingeniería de Precisión</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="mainNav">
+  <a href="#" class="nav-logo">FYS<span> MECÁNICA</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="nosotros.html">Quienes somos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#metricas">Impacto</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li class="has-dropdown">
+  <a href="#sostenibilidad">Sostenibilidad</a>
+    <div class="dropdown">
+    <div class="dropdown-inner">
+      <a href="seguridad_y_salud.html" class="drop-item">
+        <div class="drop-icon">🛡️</div>
+        <div class="drop-text">
+          <span class="drop-title">Seguridad y Salud</span>
+          <span class="drop-desc">Cultura SSO · ISO 45001 · Cero accidentes</span>
+        </div>
+      </a>
+      <a href="medio_ambiente.html" class="drop-item">
+        <div class="drop-icon">🌿</div>
+        <div class="drop-text">
+          <span class="drop-title">Medio Ambiente</span>
+          <span class="drop-desc">Reducción de emisiones · Carbono neutro 2024</span>
+        </div>
+      </a>
+      <a href="calidad.html" class="drop-item">
+        <div class="drop-icon">✅</div>
+        <div class="drop-text"> 
+          <span class="drop-title">Calidad</span>
+          <span class="drop-desc">ISO 9001 · ISO 3834 · Control de procesos</span>
+        </div>
+      </a>
+      <a href="RSE.html" class="drop-item">
+        <div class="drop-icon">🤝</div>
+        <div class="drop-text">
+          <span class="drop-title">RSE</span>
+          <span class="drop-desc">Reforestación · Comunidades · +32K árboles</span>
+        </div>
+      </a>
+    </div>
+    <div class="dropdown-footer">
+      <span class="drop-badge">// COMPROMISO 2030</span>
+      <a href="#sostenibilidad" class="drop-more">Ver todo →</a>
+    </div>
+  </div>
+  
+</li>
+    
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  
+  <a href="#contacto" class="nav-cta">Solicitar cotización →</a>
+  <button class="ham" id="hamBtn"><span></span><span></span><span></span></button>
+</nav>
+  
+<section class="hero" id="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow"><span></span>FYS MECÁNICA INDUSTRIAL — LIMA, PERÚ</div>
+      <h1 class="hero-title">
+        <span>FORJANDO</span>
+        <span class="line-cyan">EL ACERO</span>
+        <span class="stroke">DEL MAÑANA</span>
+      </h1>
+      <p class="hero-sub">FABRICACION MANTENIMIENTO Y MONTAJES DE EQUIPOS ROTATIVOS Y ESTATICOS, FAJAS TRANSPORTADORAS, SILOS METALICOS, AISLAMIENTO TERMICO, SISTEMA CONTRAINCENDIO.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-primary-mf">Ver proyectos</a>
+        <a href="#contacto" class="btn-ghost-mf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp directo
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">28+</div><div class="stat-label">años de experiencia</div></div>
+        <div class="stat-item"><div class="stat-num">820+</div><div class="stat-label">proyectos completados</div></div>
+        <div class="stat-item"><div class="stat-num">7M+</div><div class="stat-label">horas sin accidentes</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="ticker-wrap">
+  <div class="ticker">
+    <div class="ticker-item"><span class="dot"></span>ISO 45001 CERTIFICADO</div>
+    <div class="ticker-item"><span class="dot"></span>PROYECTO UNACEM</div>
+    <div class="ticker-item"><span class="dot"></span>LAS BAMBAS MINERÍA</div>
+    <div class="ticker-item"><span class="dot"></span>CARBONO NEUTRAL 2024</div>
+    <div class="ticker-item"><span class="dot"></span>PREMIO EXCELENCIA 2025</div>
+    <div class="ticker-item"><span class="dot"></span>+52M CONTRATO HISTÓRICO</div>
+    <div class="ticker-item"><span class="dot"></span>ISO 45001 CERTIFICADO</div>
+    <div class="ticker-item"><span class="dot"></span>PROYECTO UNACEM</div>
+    <div class="ticker-item"><span class="dot"></span>LAS BAMBAS MINERÍA</div>
+    <div class="ticker-item"><span class="dot"></span>CARBONO NEUTRAL 2024</div>
+    <div class="ticker-item"><span class="dot"></span>PREMIO EXCELENCIA 2025</div>
+    <div class="ticker-item"><span class="dot"></span>+52M CONTRATO HISTÓRICO</div>
+  </div>
+</div>
+
+<section id="servicios">
+  <div class="section-wrap">
+    <div class="reveal"><div class="section-label" data-num="01">Especialidades</div><h2 class="section-title">SERVICIOS QUE <span style="color:var(--cyan)">TRANSFORMAN</span></h2></div>
+    <div class="services-grid">
+      <div class="service-card reveal reveal-delay-1"><div class="service-num">01 / 06</div><div class="service-icon">&#9881;</div><h3 class="service-title">FABRICACION MANTENIMIENTO</h3><p class="service-desc">Instalación, montaje y puesta en marcha de equipos industriales pesados con los más altos estándares.</p><div class="service-tags"><span class="tag">Molinos SAG</span><span class="tag">Chancadoras</span><span class="tag">Fajas</span></div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-num">02 / 06</div><div class="service-icon">&#127959;</div><h3 class="service-title"> MONTAJES DE EQUIPOS ROTATIVOS Y ESTATICOS</h3><p class="service-desc">Diseño, fabricación y montaje de estructuras de acero de alta complejidad para entornos industriales.</p><div class="service-tags"><span class="tag">Plantas</span><span class="tag">Tanques</span><span class="tag">Edificios Acero</span></div></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-num">03 / 06</div><div class="service-icon">&#128295;</div><h3 class="service-title">FAJAS TRANSPORTADORAS</h3><p class="service-desc">Diagnóstico avanzado para anticipar fallas, maximizar disponibilidad y reducir costos de operación.</p><div class="service-tags"><span class="tag">Termografía</span><span class="tag">Vibración </span><span class="tag">Alineación Láser</span></div></div>
+      <div class="service-card reveal reveal-delay-1"><div class="service-num">04 / 06</div><div class="service-icon">&#128187;</div><h3 class="service-title">SILOS METALICOS</h3><p class="service-desc">Implementación e optimizar operaciones y reducir tiempos de parada al mínimo.</p><div class="service-tags"><span class="tag">BIM</span><span class="tag">IoT</span><span class="tag">Simulación</span></div></div>
+      <div class="service-card reveal reveal-delay-2"><div class="service-num">05 / 06</div><div class="service-icon">&#128268;</div><h3 class="service-title">AISLAMIENTO TERMICO</h3><p class="service-desc">Instalación y comisionado de sistemas de potencia, control y automatización para grandes proyectos.</p><div class="service-tags"><span class="tag">Media Tensión</span><span class="tag">SCADA</span><span class="tag">Automatización</span></div></div>
+      <div class="service-card reveal reveal-delay-3"><div class="service-num">06 / 06</div><div class="service-icon">&#127807;</div><h3 class="service-title">SISTEMA CONTRAINCENDIO</h3><p class="service-desc">Soluciones verdes: energías renovables, tratamiento de agua industrial y economía circular metálica.</p><div class="service-tags"><span class="tag">Solar</span><span class="tag">Agua</span><span class="tag">Carbono Neutro</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="section-wrap">
+    <div class="projects-header reveal"><div><div class="section-label" data-num="02">Portafolio</div><h2 class="section-title">PROYECTOS <span style="color:var(--cyan)">ICÓNICOS</span></h2></div><a href="#contacto" class="btn-ghost-mf reveal">Ver todos →</a></div>
+    <div class="projects-grid reveal">
+      <div class="proj-card"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/07/23ad8310-b0cc-4364-8405-ee1dc33278e1-e1690902568537.jpeg" alt="Antamina"><div class="proj-overlay"><div class="proj-cat">Minería · Concentradora</div><div class="proj-name">Proyecto Antamina — Planta Concentradora</div><div class="proj-meta">12,000 TN · 14 meses · Áncash, Perú</div><a href="#contacto" class="proj-arrow">→</a></div></div>
+      <div class="proj-card"><img class="proj-img" src="https://grupojjc.com.pe/wp-content/uploads/2022/09/JJC-proyecto-industria-planta-molino-8-embolsado-5-galeria-01-1128x690.jpg" alt="Las Bambas"><div class="proj-overlay"><div class="proj-cat">Cobre · Estructura</div><div class="proj-name">Las Bambas — Estructura Minera</div><div class="proj-meta">Acero Alta Resistencia · Apurímac</div><a href="#contacto" class="proj-arrow">→</a></div></div>
+      <div class="proj-card"><img class="proj-img" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/473359861_1517703332227088_8512780068031764349_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHFgUKExVH7NsVK12fwztGj0AdEwQplRCbQB0TBCmVEJumBD5UjOmEnWcb3_eyCAQd6ytxNUCt98g6ncWyTuG9i&_nc_ohc=ydh0n8zsFIsQ7kNvwHyw6k0&_nc_oc=AdqOB7WVlbF63IWegPFOhrJSeMf5BBQj-Ai-6XQBa774AjSxdRaG60L0HdSA7v9I-BM&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=Fp4XxX89mcZYk1vU4WFY4g&_nc_ss=7a3a8&oh=00_Af3L64SrW5GpD5_sFMIdTB_NlfzwRcF-RLRsW0Z-OvCesA&oe=69D47F03" alt="Termoelectrica"><div class="proj-overlay"><div class="proj-cat">Energía · Calderas</div><div class="proj-name">Central Termoeléctrica Norte</div><div class="proj-meta">360 MW · Tuberías Críticas</div><a href="#contacto" class="proj-arrow">→</a></div></div>
+      <div class="proj-card"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/08/94d22324-8c51-4036-9140-b0f23604dd53.jpg" alt="Solar"><div class="proj-overlay"><div class="proj-cat">Renovable · Solar</div><div class="proj-name">Planta Fotovoltaica Moquegua</div><div class="proj-meta">250 MWp · Acero Galvanizado</div><a href="#contacto" class="proj-arrow">→</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="metricas">
+  <div class="section-wrap">
+    <div class="reveal"><div class="section-label" data-num="03">Impacto</div><h2 class="section-title">NÚMEROS QUE <span style="color:var(--cyan)">HABLAN</span></h2></div>
+    <div class="metrics-row reveal">
+      <div class="metric-item"><div class="metric-big"><span class="counter" data-target="28">0</span><span class="metric-unit">+</span></div><div class="metric-label">Años de experiencia</div></div>
+      <div class="metric-item"><div class="metric-big"><span class="counter" data-target="820">0</span><span class="metric-unit">+</span></div><div class="metric-label">Proyectos completados</div></div>
+      <div class="metric-item"><div class="metric-big"><span class="counter" data-target="7">0</span><span class="metric-unit">M+</span></div><div class="metric-label">HH sin accidentes</div></div>
+      <div class="metric-item"><div class="metric-big"><span class="counter" data-target="99">0</span><span class="metric-unit">%</span></div><div class="metric-label">Cumplimiento</div></div>
+      <div class="metric-item"><div class="metric-big"><span class="counter" data-target="4">0</span></div><div class="metric-label">Países de presencia</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="sostenibilidad">
+  <div class="section-wrap">
+    <div class="reveal"><div class="section-label" data-num="04">Compromiso</div><h2 class="section-title">ACERO VERDE · <span style="color:var(--cyan)">FUTURO REAL</span></h2></div>
+    <div class="sust-grid">
+      <div class="reveal">
+        <div class="sust-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 300 300" width="100%"><circle class="ring-track" cx="150" cy="150" r="130"/><circle class="ring-fill" id="mainRing" cx="150" cy="150" r="130"/></svg>
+          <div class="ring-center"><div class="ring-num">75%</div><div class="ring-label">REDUCCIÓN DE EMISIONES</div><div style="margin-top:.8rem;font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--steel);text-align:center;letter-spacing:1px;">META 2030</div></div>
+        </div>
+      </div>
+      <div>
+        <p class="reveal" style="color:var(--steel);line-height:1.8;margin-bottom:2rem;font-size:.95rem;">Somos carbono neutral en operaciones Scope 1 y 2 desde 2024. Nuestro camino hacia el net-zero está respaldado por tecnología, innovación y un compromiso genuino con el planeta.</p>
+        <div class="sust-facts">
+          <div class="sust-fact reveal reveal-delay-1"><div class="sust-fact-icon">&#128167;</div><div><div class="sust-fact-title">Recirculación Hídrica</div><div class="sust-fact-desc">82% de agua reutilizada. Cero vertimientos tóxicos.</div></div></div>
+          <div class="sust-fact reveal reveal-delay-2"><div class="sust-fact-icon">&#9851;</div><div><div class="sust-fact-title">Reciclaje Metálico Circular</div><div class="sust-fact-desc">96% de residuos metálicos reintegrados al ciclo productivo.</div></div></div>
+          <div class="sust-fact reveal reveal-delay-3"><div class="sust-fact-icon">&#127794;</div><div><div class="sust-fact-title">Reforestación Activa</div><div class="sust-fact-desc">+32,000 árboles plantados en zonas de intervención.</div></div></div>
+          <div class="sust-fact reveal reveal-delay-4"><div class="sust-fact-icon">&#9889;</div><div><div class="sust-fact-title">Energía Renovable</div><div class="sust-fact-desc">60% de operaciones con fuentes renovables. Solar y eólica.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="section-wrap">
+    <div class="reveal"><div class="section-label" data-num="05">Contacto</div><h2 class="section-title">LISTO PARA EL <span style="color:var(--cyan)">SIGUIENTE NIVEL?</span></h2><p style="color:var(--steel);margin-top:1rem;max-width:500px;line-height:1.7;">Nuestros especialistas te responden en menos de 30 minutos.</p></div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-item reveal reveal-delay-2"><div class="ci-icon">&#9993;</div><div><span class="ci-label">Email</span><span class="ci-val">metal.mecanica.fys@outlook.com.pe</span></div></div>
+        <div class="contact-info-item reveal reveal-delay-3"><div class="ci-icon">&#128205;</div><div><span class="ci-label">Sede Principal</span><span class="ci-val">Tarma, Junin — Perú</span></div></div>
+        <div class="contact-info-item reveal reveal-delay-4"><div class="ci-icon">&#128336;</div><div><span class="ci-label">Horario de atención</span><span class="ci-val">Lun–Vie 8am – 5:30pm </span></div></div>
+        <div style="margin-top:2rem;" class="reveal reveal-delay-5">
+          <div class="section-label" data-num="" style="margin-bottom:1rem;">CERTIFICACIONES</div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 3834</span>
+            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 45001</span>
+            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 9001</span>
+            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 14001</span>
+            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 37001</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="form-row">
+          <div class="form-field"><input type="text" id="fName" placeholder="Nombre completo *"></div>
+          <div class="form-field"><input type="tel" id="fPhone" placeholder="WhatsApp / Teléfono *"></div>
+        </div>
+        <div class="form-field"><input type="email" id="fEmail" placeholder="Correo electrónico"></div>
+        <div class="form-field">
+          <select id="fService">
+            <option value="">Tipo de proyecto o servicio</option>
+            <option value="Fabricación">Fabricación de equipos rotativos y estáticos</option>
+            <option value="Mantenimiento">Mantenimiento de equipos rotativos y estáticos</option>
+            <option value="Montaje">Montaje de equipos industriales</option>
+            <option value="Fajas">Fajas transportadorass</option>
+            <option value="Silos metálicos">Silos metálicos</option>
+            <option value="Aislamiento">Aislamiento térmico</option>
+            <option value="Sistemas">Sistemas contra incendio</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-field"><textarea id="fMsg" placeholder="Cuéntanos tu proyecto o requerimiento..."></textarea></div>
+        <button class="whatsapp-btn" id="waBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          CONTACTAR POR WHATSAPP
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="nav-logo" style="font-size:1.2rem;">FYS<span> MECÁNICA</span></a>
+    <div class="footer-copy">© 2025 FYS MECÁNICA INDUSTRIAL S.A.C. — LURÍN, LIMA, PERÚ</div>
+    <div style="display:flex;gap:1.5rem;">
+      <a href="#" style="color:var(--steel);text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.65rem;transition:color .2s" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--steel)'">LinkedIn</a>
+      <a href="#" style="color:var(--steel);text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.65rem;transition:color .2s" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--steel)'">Instagram</a>
+      <a href="#" style="color:var(--steel);text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.65rem;transition:color .2s" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--steel)'">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
