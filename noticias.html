@@ -1,77 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias - FYS Mecánica Industrial</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noticias — FYS Mecánica Industrial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
-    <section class="noticias">
-  <h2>Noticias y Novedades</h2>
 
-  <!-- NOTICIA 1 -->
-  <div class="noticia">
-    <span class="tipo">Novedad</span>
-    <h3>FYS fortalece operaciones en Condorcocha</h3>
-    <p>
-      La empresa Metal Mecánica FYS continúa consolidando su presencia en el centro poblado de Condorcocha (Tarma, Junín), desarrollando trabajos de fabricación, mantenimiento y montaje de estructuras metálicas para el sector industrial.
-    </p>
-    <div class="meta">
-      <span>FYS</span> | <span>Actualidad</span>
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">FYS<span> MECÁNICA</span></a>
+  <a href="index.html" class="nav-back">Volver al inicio</a>
+</nav>
+
+<!-- HERO -->
+<div class="news-hero">
+  <div class="hero-bg-word">NOTICIAS</div>
+  <div class="news-hero-inner" style="padding:0 4rem;">
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span class="sep">›</span>
+      <span>Noticias</span>
     </div>
+    <div class="hero-tag">// SALA DE PRENSA</div>
+    <h1 class="hero-h1">ÚLTIMAS <em>NOTICIAS</em></h1>
+    <p class="hero-sub">Proyectos, logros, certificaciones y novedades de FYS Mecánica Industrial — empresa líder en fabricación, mantenimiento y montaje industrial en Perú.</p>
   </div>
+</div>
 
-  <!-- NOTICIA 2 -->
-  <div class="noticia">
-    <span class="tipo">Proyecto</span>
-    <h3>Participación en operaciones industriales de la zona</h3>
-    <p>
-      FYS participa como empresa contratista en operaciones industriales vinculadas a plantas de producción en Condorcocha, brindando soporte técnico y mano de obra especializada en mantenimiento mecánico.
-    </p>
-    <div class="meta">
-      <span>FYS</span> | <span>Actualidad</span>
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner" id="ticker"></div>
+</div>
+
+<!-- MAIN -->
+<section class="news-section">
+  <div class="news-wrap">
+
+    <!-- FILTROS -->
+    <div class="filters reveal">
+      <button class="filter-btn active" data-f="todos">Todos</button>
+      <button class="filter-btn" data-f="proyecto">Proyectos</button>
+      <button class="filter-btn" data-f="seguridad">Seguridad</button>
+      <button class="filter-btn" data-f="empresa">Empresa</button>
+      <button class="filter-btn" data-f="logro">Logros</button>
+      <button class="filter-btn" data-f="novedad">Novedades</button>
+      <button class="filter-btn" data-f="actividad">Actividad</button>
     </div>
-  </div>
 
-  <!-- NOTICIA 3 -->
-  <div class="noticia">
-    <span class="tipo">Seguridad</span>
-    <h3>Compromiso con la seguridad y salud en el trabajo</h3>
-    <p>
-      La empresa forma parte de equipos de trabajo que cumplen estrictos protocolos de seguridad y salud ocupacional en plantas industriales, contribuyendo a la prevención de riesgos laborales en el sector.
-    </p>
-    <div class="meta">
-      <span>FYS</span> | <span>2020</span>
-    </div>
-  </div>
+    <!-- GRID TOP -->
+    <div class="grid-top reveal" id="grid-top"></div>
 
-  <!-- NOTICIA 4 -->
-  <div class="noticia">
-    <span class="tipo">Empresa</span>
-    <h3>FYS: empresa metalmecánica en crecimiento</h3>
-    <p>
-      Metal Mecánica FYS, ubicada en la Carretera Central en Condorcocha, se especializa en la fabricación de productos metálicos y servicios múltiples para el sector industrial en la región Junín. 
-    </p>
-    <div class="meta">
-      <span>FYS</span> | <span>Información institucional</span>
-    </div>
-  </div>
+    <!-- GRID BOTTOM -->
+    <div class="grid-bottom reveal d2" id="grid-bottom"></div>
 
-  <!-- NOTICIA 5 -->
-  <div class="noticia">
-    <span class="tipo">Actividad</span>
-    <h3>Servicios integrales en metalmecánica</h3>
-    <p>
-      La empresa ofrece servicios de fabricación, mantenimiento y montaje de equipos industriales, incluyendo estructuras metálicas, fajas transportadoras y sistemas mecánicos para diferentes industrias.
-    </p>
-    <div class="meta">
-      <span>FYS</span> | <span>Actualidad</span>
-    </div>
   </div>
-
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">FYS<span> MECÁNICA</span></a>
+    <div class="footer-copy">© 2025 FYS MECÁNICA INDUSTRIAL S.A.C. — TARMA, JUNÍN, PERÚ</div>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FAB -->
+<button class="fab" id="open-modal">
+  
+</button>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title">Publicar Noticia</span>
+      <button class="modal-close" id="close-modal">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <div class="form-group">
+        <label class="form-label">Imagen de portada</label>
+        <div id="upload-zone" class="upload-zone">
+          <input type="file" id="img-file" accept="image/*">
+          <div id="upload-ph">
+            <div class="upload-icon">📷</div>
+            <div class="upload-label">Haz clic o arrastra una imagen aquí</div>
+            <div class="upload-hint">JPG · PNG · WEBP — máx. 5 MB</div>
+          </div>
+          <div id="img-prev-wrap" class="img-prev-wrap" style="display:none;">
+            <img id="img-prev" class="img-prev" src="" alt="preview">
+            <button class="img-del" id="img-del" type="button">✕</button>
+          </div>
+        </div>
+        <div style="margin-top:.5rem; display:flex; align-items:center; gap:.6rem;">
+          <button class="url-toggle" id="toggle-url" type="button">— o usa URL de imagen</button>
+        </div>
+        <div id="url-field" style="display:none; margin-top:.5rem;">
+          <input class="form-input" id="img-url" type="url" placeholder="https://...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Tipo</label>
+        <select class="form-select" id="f-tipo">
+          <option value="novedad">Novedad</option>
+          <option value="proyecto">Proyecto</option>
+          <option value="seguridad">Seguridad</option>
+          <option value="empresa">Empresa</option>
+          <option value="logro">Logro</option>
+          <option value="actividad">Actividad</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Título *</label>
+        <input class="form-input" id="f-titulo" type="text" placeholder="Escribe el título de la noticia...">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Descripción *</label>
+        <textarea class="form-textarea" id="f-desc" placeholder="Describe la noticia con detalle..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Fecha</label>
+          <input class="form-input" id="f-fecha" type="text" placeholder="Ej: Abril 2025">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Fuente</label>
+          <input class="form-input" id="f-fuente" type="text" placeholder="FYS · Lima, Perú">
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" id="btn-cancel">Cancelar</button>
+      <button class="btn-save" id="btn-save">Publicar →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── DATA ──────────────────────────────────────────────
+let news = [
+  {
+    tipo:'proyecto', featured:true,
+    titulo:'FYS completa montaje de 12,000 TN de acero en Planta Concentradora Unacem',
+    desc:'FYS Mecánica Industrial finalizó con éxito el montaje electromecánico integral de la planta concentradora de Unacem en Condorcocha, Tarma — uno de los proyectos más grandes en 28 años de trayectoria. El proyecto incluyó instalación de molinos SAG, fajas transportadoras, estructuras de alta resistencia y sistemas SCADA, cumpliendo en tiempo y con cero accidentes.',
+    fecha:'Marzo 2025', fuente:'FYS Mecánica · Condorcocha, Junín',
+    img:'https://fysmetales.com/wp-content/uploads/2023/07/23ad8310-b0cc-4364-8405-ee1dc33278e1-e1690902568537.jpeg'
+  },
+  {
+    tipo:'seguridad', featured:false,
+    titulo:'7 millones de horas hombre sin accidentes',
+    desc:'FYS alcanzó el hito de 7 millones de horas hombre trabajadas sin accidentes incapacitantes, consolidando su cultura de cero daño en todos sus frentes de trabajo.',
+    fecha:'Diciembre 2024', fuente:'FYS · SSO', 
+    img:'https://www.shutterstock.com/image-photo/men-group-construction-worker-arms-260nw-2611622077.jpg'
+  },
+  {
+    tipo:'novedad', featured:false,
+    titulo:'Certificaciones ISO 45001 y ISO 37001:Se aprobó su Política de Seguridad, Medio Ambiente y Antisoborno.',
+    desc:'Desde 2024, FYS obtuvo las certificaciones ISO 45001 y ISO 37001, consolidando su compromiso con la seguridad, el medio ambiente y la ética empresarial.',
+    fecha:'Nov 2024', fuente:'FYS · Sostenibilidad',
+    img:'https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/491138257_1215272410605598_3608248286512430171_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHFPnFk4AvRddxKSHUefGJuU3fpZZwth89Td-llnC2Hz8QtKUWdiudGDwA2VX-N7fuY7diOni0TUWADwrDwQPAN&_nc_ohc=I8Eh07N1bkgQ7kNvwHaXm0K&_nc_oc=AdqUD5jBBhkRbisCayrZwgxWmdJELLfKmEt_kEG66ugF5G2aHf2c2pqVAiKLYG35t64&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=Rd8qGI7rlp45gnxNq1yW5Q&_nc_ss=7a3a8&oh=00_Af26m5IMGvwzj2-bA0yvgwrNuOq8793faEABjHmdS8EVsw&oe=69DA16E2'
+  },
+  {
+    tipo:'proyecto', featured:false,
+    titulo:'Estructura cementera Unacem: acero ASTM A572 bajo ISO 3834',
+    desc:'Fabricación y montaje de estructura metálica de alta resistencia para instalaciones cementeras, con soldadura certificada y control dimensional riguroso en cada junta.',
+    fecha:'Sep 2024', fuente:'FYS · Calidad',
+    img:'https://grupojjc.com.pe/wp-content/uploads/2022/09/JJC-proyecto-industria-planta-molino-8-embolsado-5-galeria-01-1128x690.jpg'
+  },
+  {
+    tipo:'empresa', featured:false,
+    titulo:'28 años de ingeniería industrial: historia de FYS',
+    desc:'Con 28 años en el mercado, FYS Mecánica Industrial ha evolucionado de taller metalmecánico regional a empresa de ingeniería con  más de 820 proyectos en cemento, energía e industria.',
+    fecha:'Ago 2024', fuente:'FYS · Institucional', img:null
+  }
+];
+
+let activeFilter = 'todos';
+let currentImgData = null;
+
+// ── TICKER ──────────────────────────────────────────
+const tickerItems = [
+  'ISO 45001 CERTIFICADO · FYS 2024',
+  '+820 PROYECTOS COMPLETADOS',
+  '7M+ HORAS SIN ACCIDENTES',
+  'PREMIO EXCELENCIA INDUSTRIAL 2025',
+  'PROYECTO UNACEM · CONDORCOCHA'
+];
+const ticker = document.getElementById('ticker');
+const allItems = [...tickerItems, ...tickerItems];
+ticker.innerHTML = allItems.map(t =>
+  `<div class="ticker-item"><span class="dot"></span>${t}</div>`
+).join('');
+
+// ── RENDER ───────────────────────────────────────────
+function badgeClass(tipo){ return 'badge b-'+tipo; }
+
+function cardHTML(item, idx, size='normal'){
+  const imgHTML = item.img
+    ? `<div class="ncard-img-wrap"><img class="ncard-img" src="${item.img}" alt="${item.titulo}" onerror="this.parentElement.outerHTML='<div class=ncard-no-img><span>FYS</span></div>'"></div>`
+    : `<div class="ncard-no-img"><span>FYS</span></div>`;
+
+  return `
+  <div class="ncard ${item.featured?'featured':'small'} reveal" data-idx="${idx}" style="animation-delay:${idx*0.07}s">
+    ${imgHTML}
+    <div class="ncard-body">
+      <div class="ncard-top">
+        <span class="${badgeClass(item.tipo)}">${item.tipo}</span>
+        <span class="ncard-date">${item.fecha}</span>
+      </div>
+      <div class="ncard-title">${item.titulo}</div>
+      <p class="ncard-desc">${item.desc}</p>
+      <div class="ncard-footer">
+        <span class="ncard-source">${item.fuente}</span>
+        <span class="ncard-read">Leer →</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function render(){
+  const filtered = activeFilter === 'todos'
+    ? news
+    : news.filter(n => n.tipo === activeFilter);
+
+  const topEl = document.getElementById('grid-top');
+  const botEl = document.getElementById('grid-bottom');
+
+  if(!filtered.length){
+    topEl.innerHTML = `<div class="news-empty" style="grid-column:1/-1"><p>// No hay noticias en esta categoría</p></div>`;
+    botEl.innerHTML = '';
+    return;
+  }
+
+  // Primeros 3 van arriba (featured + 2 small), el resto abajo
+  const topNews = filtered.slice(0, 3);
+  const botNews = filtered.slice(3);
+
+  topEl.innerHTML = topNews.map((item, i) => cardHTML(item, i)).join('');
+  botEl.innerHTML = botNews.map((item, i) => cardHTML(item, i+3)).join('');
+
+  // re-observe reveals
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => ro.observe(el));
+}
+
+// ── FILTROS ───────────────────────────────────────────
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.f;
+    render();
+  });
+});
+
+// ── MODAL ─────────────────────────────────────────────
+const overlay = document.getElementById('overlay');
+function openModal(){ overlay.classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(){ overlay.classList.remove('open'); document.body.style.overflow=''; resetForm(); }
+
+document.getElementById('open-modal').addEventListener('click', openModal);
+document.getElementById('close-modal').addEventListener('click', closeModal);
+document.getElementById('btn-cancel').addEventListener('click', closeModal);
+overlay.addEventListener('click', e => { if(e.target === overlay) closeModal(); });
+
+// URL toggle
+let showUrl = false;
+document.getElementById('toggle-url').addEventListener('click', () => {
+  showUrl = !showUrl;
+  document.getElementById('url-field').style.display = showUrl ? 'block' : 'none';
+  document.getElementById('toggle-url').textContent = showUrl ? '— ocultar campo URL' : '— o usa URL de imagen';
+});
+
+// File upload
+document.getElementById('img-file').addEventListener('change', function(){
+  const file = this.files[0];
+  if(!file) return;
+  if(file.size > 5*1024*1024){ alert('La imagen no debe superar 5 MB'); return; }
+  const reader = new FileReader();
+  reader.onload = e => {
+    currentImgData = e.target.result;
+    document.getElementById('img-prev').src = currentImgData;
+    document.getElementById('upload-ph').style.display = 'none';
+    document.getElementById('img-prev-wrap').style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+});
+
+document.getElementById('img-del').addEventListener('click', e => {
+  e.preventDefault(); e.stopPropagation();
+  currentImgData = null;
+  document.getElementById('img-file').value = '';
+  document.getElementById('upload-ph').style.display = 'block';
+  document.getElementById('img-prev-wrap').style.display = 'none';
+});
+
+function resetForm(){
+  document.getElementById('f-tipo').value = 'novedad';
+  document.getElementById('f-titulo').value = '';
+  document.getElementById('f-desc').value = '';
+  document.getElementById('f-fecha').value = '';
+  document.getElementById('f-fuente').value = '';
+  document.getElementById('img-url').value = '';
+  currentImgData = null;
+  document.getElementById('img-file').value = '';
+  document.getElementById('upload-ph').style.display = 'block';
+  document.getElementById('img-prev-wrap').style.display = 'none';
+  showUrl = false;
+  document.getElementById('url-field').style.display = 'none';
+  document.getElementById('toggle-url').textContent = '— o usa URL de imagen';
+}
+
+// Guardar
+document.getElementById('btn-save').addEventListener('click', () => {
+  const titulo = document.getElementById('f-titulo').value.trim();
+  const desc = document.getElementById('f-desc').value.trim();
+  if(!titulo || !desc){ alert('El título y la descripción son obligatorios.'); return; }
+
+  const imgUrl = document.getElementById('img-url').value.trim();
+  const finalImg = currentImgData || (imgUrl || null);
+
+  news.unshift({
+    tipo: document.getElementById('f-tipo').value,
+    featured: news.length === 0,
+    titulo,
+    desc,
+    fecha: document.getElementById('f-fecha').value.trim() || 'Reciente',
+    fuente: document.getElementById('f-fuente').value.trim() || 'FYS Mecánica',
+    img: finalImg
+  });
+
+  // Si la nueva noticia es la primera del array, hacerla featured
+  news.forEach((n,i) => n.featured = (i===0));
+
+  closeModal();
+  activeFilter = 'todos';
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('[data-f="todos"]').classList.add('active');
+  render();
+});
+
+// ── SCROLL / REVEAL ────────────────────────────────────
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 50);
+});
+
+// ── INIT ──────────────────────────────────────────────
+render();
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
 </body>
 </html>

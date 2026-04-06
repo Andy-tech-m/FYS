@@ -86,7 +86,7 @@ const projData = {
     cat: "Minería · Concentradora",
     title: "Proyecto Unacem — Planta Concentradora",
     tags: ["Montaje Industrial","Equipos Rotativos","Estructuras Acero","12,000 TN"],
-    stats: [["12,000 TN","Acero montado"],["14 meses","Duración"],["Condorcocha","Ubicación"]],
+    stats: [["12,000 TN","Acero montado"],["6 meses","Duración"],["Condorcocha","Ubicación"]],
     desc: "Proyecto integral de montaje electromecánico para la planta concentradora de Unacem, incluyendo instalación de equipos pesados y sistemas de fajas transportadoras.",
     works: [
       "Montaje e instalación de molinos de bolas y SAG de alta capacidad",
@@ -131,7 +131,7 @@ const projData = {
   },
   solar: {
     img: "https://fysmetales.com/wp-content/uploads/2023/08/94d22324-8c51-4036-9140-b0f23604dd53.jpg",
-    cat: "Renovable · Solar",
+    cat: "Renovable",
     title: "Planta Unacem — Estructura Solar",
     tags: ["Acero Galvanizado","Energía Renovable","250 MWp","Carbono Neutro"],
     stats: [["250 MWp","Capacidad"],["Galvanizado","Tipo acero"],["Renovable","Energía"]],
@@ -169,3 +169,4 @@ window.closeProjModal = function() {
 window.closeProjModalOutside = function(e) {
   if (e.target === document.getElementById('projModalOverlay')) window.closeProjModal();
 }
+
