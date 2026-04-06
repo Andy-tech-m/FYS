@@ -977,3 +977,103 @@ footer{position:relative;z-index:2;border-top:1px solid rgba(179,136,255,.08);pa
   background: #00f5ff;
   box-shadow: 0 0 10px #00f5ff;
 }
+
+
+/*CERTIFICACIONES*/
+.iso-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* BOTÓN ISO */
+.iso-item .tag {
+  padding: .5rem 1rem;
+  font-size: .65rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER EN EL BOTÓN */
+.iso-item:hover .tag {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0,245,255,0.6);
+}
+
+/* TOOLTIP */
+.tooltip-box {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  background: linear-gradient(135deg, #00f5ff, #00c8e0);
+  color: #03040a;
+
+  padding: 8px 12px;
+  font-size: 0.7rem;
+  border-radius: 8px;
+
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 0 20px rgba(0,245,255,0.5);
+}
+
+/* FLECHITA */
+.tooltip-box::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 6px;
+  border-style: solid;
+  border-color: #00c8e0 transparent transparent transparent;
+}
+
+/* MOSTRAR TOOLTIP */
+.iso-item:hover .tooltip-box {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+
+
+/*Modal de UNACEM y CALCEM*/
+.proj-modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.75); z-index: 9999;
+  align-items: center; justify-content: center; padding: 1rem;
+}
+.proj-modal {
+  background: var(--dark, #0d1117); border: 1px solid #1e2a35;
+  border-radius: 16px; max-width: 680px; width: 100%;
+  max-height: 90vh; overflow-y: auto; position: relative;
+}
+.proj-modal-close {
+  position: absolute; top: 12px; right: 14px;
+  background: rgba(0,0,0,.6); border: 1px solid rgba(255,255,255,.2);
+  color: #fff; width: 32px; height: 32px; border-radius: 50%;
+  cursor: pointer; font-size: 16px; z-index: 10;
+  display: flex; align-items: center; justify-content: center;
+}
+.proj-modal-img { width: 100%; height: 220px; object-fit: cover; border-radius: 16px 16px 0 0; display: block; }
+.proj-modal-body { padding: 1.5rem; }
+.proj-modal-cat { font-size: .6rem; color: var(--cyan); letter-spacing: 2px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; margin-bottom: .4rem; }
+.proj-modal-title { font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: .5rem; }
+.proj-modal-tags { display: flex; gap: .5rem; flex-wrap: wrap; margin: .75rem 0; }
+.proj-modal-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: .75rem; margin: 1rem 0; }
+.pm-stat { background: rgba(255,255,255,.04); border: 1px solid #1e2a35; border-radius: 8px; padding: .75rem; text-align: center; }
+.pm-stat-num { font-size: 1.1rem; font-weight: 800; color: var(--cyan); }
+.pm-stat-lbl { font-size: .6rem; color: var(--steel); font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; margin-top: 2px; }
+.proj-modal-desc { font-size: .875rem; color: var(--steel); line-height: 1.7; margin-top: .75rem; }
+.pmw-label { font-size: .6rem; color: var(--steel); font-family: 'JetBrains Mono', monospace; letter-spacing: 2px; text-transform: uppercase; margin-bottom: .6rem; margin-top: 1rem; }
+.pmw-item { display: flex; align-items: flex-start; gap: 8px; padding: 8px 0; border-bottom: 1px solid #1e2a35; }
+.pmw-item:last-child { border-bottom: none; }
+.pmw-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); margin-top: 5px; flex-shrink: 0; }
+.pmw-text { font-size: .8rem; color: var(--steel); line-height: 1.5; }

@@ -129,14 +129,35 @@
 <section id="proyectos">
   <div class="section-wrap">
     <div class="projects-header reveal"><div><div class="section-label" data-num="02">Portafolio</div><h2 class="section-title">PROYECTOS <span style="color:var(--cyan)">ICÓNICOS</span></h2></div><a href="#contacto" class="btn-ghost-mf reveal">Ver todos →</a></div>
-    <div class="projects-grid reveal">
-      <div class="proj-card"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/07/23ad8310-b0cc-4364-8405-ee1dc33278e1-e1690902568537.jpeg" alt="Antamina"><div class="proj-overlay"><div class="proj-cat">Minería · Concentradora</div><div class="proj-name">Proyecto Antamina — Planta Concentradora</div><div class="proj-meta">12,000 TN · 14 meses · Áncash, Perú</div><a href="#contacto" class="proj-arrow">→</a></div></div>
-      <div class="proj-card"><img class="proj-img" src="https://grupojjc.com.pe/wp-content/uploads/2022/09/JJC-proyecto-industria-planta-molino-8-embolsado-5-galeria-01-1128x690.jpg" alt="Las Bambas"><div class="proj-overlay"><div class="proj-cat">Cobre · Estructura</div><div class="proj-name">Las Bambas — Estructura Minera</div><div class="proj-meta">Acero Alta Resistencia · Apurímac</div><a href="#contacto" class="proj-arrow">→</a></div></div>
-      <div class="proj-card"><img class="proj-img" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/473359861_1517703332227088_8512780068031764349_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHFgUKExVH7NsVK12fwztGj0AdEwQplRCbQB0TBCmVEJumBD5UjOmEnWcb3_eyCAQd6ytxNUCt98g6ncWyTuG9i&_nc_ohc=ydh0n8zsFIsQ7kNvwHyw6k0&_nc_oc=AdqOB7WVlbF63IWegPFOhrJSeMf5BBQj-Ai-6XQBa774AjSxdRaG60L0HdSA7v9I-BM&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=Fp4XxX89mcZYk1vU4WFY4g&_nc_ss=7a3a8&oh=00_Af3L64SrW5GpD5_sFMIdTB_NlfzwRcF-RLRsW0Z-OvCesA&oe=69D47F03" alt="Termoelectrica"><div class="proj-overlay"><div class="proj-cat">Energía · Calderas</div><div class="proj-name">Central Termoeléctrica Norte</div><div class="proj-meta">360 MW · Tuberías Críticas</div><a href="#contacto" class="proj-arrow">→</a></div></div>
-      <div class="proj-card"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/08/94d22324-8c51-4036-9140-b0f23604dd53.jpg" alt="Solar"><div class="proj-overlay"><div class="proj-cat">Renovable · Solar</div><div class="proj-name">Planta Fotovoltaica Moquegua</div><div class="proj-meta">250 MWp · Acero Galvanizado</div><a href="#contacto" class="proj-arrow">→</a></div></div>
-    </div>
+          <!-- Modal Overlay -->
+      <div class="proj-modal-overlay" id="projModalOverlay" onclick="closeProjModalOutside(event)">
+        <div class="proj-modal" id="projModalBox">
+          <button class="proj-modal-close" onclick="closeProjModal()">✕</button>
+          <img id="pm-img" class="proj-modal-img" src="" alt="">
+          <div class="proj-modal-body">
+            <div id="pm-cat" class="proj-modal-cat"></div>
+            <div id="pm-title" class="proj-modal-title"></div>
+            <div id="pm-tags" class="proj-modal-tags"></div>
+            <div id="pm-stats" class="proj-modal-stats"></div>
+            <div id="pm-desc" class="proj-modal-desc"></div>
+            <div class="proj-modal-works">
+              <div class="pmw-label">// TRABAJOS REALIZADOS</div>
+              <div id="pm-works"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid reveal">
+        <div class="proj-card" onclick="openProjModal('unacem1')"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/07/23ad8310-b0cc-4364-8405-ee1dc33278e1-e1690902568537.jpeg" alt="Unacem"><div class="proj-overlay"><div class="proj-cat">Cementera · Concentradora</div><div class="proj-name">Proyecto Unacem — Planta Concentradora</div><div class="proj-meta">12,000 TN · 14 meses · Condorcocha, Perú</div><span class="proj-arrow">→</span></div></div>
+        <div class="proj-card" onclick="openProjModal('unacem2')"><img class="proj-img" src="https://grupojjc.com.pe/wp-content/uploads/2022/09/JJC-proyecto-industria-planta-molino-8-embolsado-5-galeria-01-1128x690.jpg" alt="Las Bambas"><div class="proj-overlay"><div class="proj-cat">Estructura</div><div class="proj-name">Las Unacem — Estructura Cementera</div><div class="proj-meta">Acero Alta Resistencia · Condorcocha, Perú</div><span class="proj-arrow">→</span></div></div>
+        <div class="proj-card" onclick="openProjModal('calcem')"><img class="proj-img" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/473359861_1517703332227088_8512780068031764349_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHFgUKExVH7NsVK12fwztGj0AdEwQplRCbQB0TBCmVEJumBD5UjOmEnWcb3_eyCAQd6ytxNUCt98g6ncWyTuG9i&_nc_ohc=ydh0n8zsFIsQ7kNvwHyw6k0&_nc_oc=AdqOB7WVlbF63IWegPFOhrJSeMf5BBQj-Ai-6XQBa774AjSxdRaG60L0HdSA7v9I-BM&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=Fp4XxX89mcZYk1vU4WFY4g&_nc_ss=7a3a8&oh=00_Af3L64SrW5GpD5_sFMIdTB_NlfzwRcF-RLRsW0Z-OvCesA&oe=69D47F03" alt="Calcem"><div class="proj-overlay"><div class="proj-cat">Descargas De Material</div><div class="proj-name">Calcem</div><div class="proj-meta">360 MW · Tuberías Críticas</div><span class="proj-arrow">→</span></div></div>
+        <div class="proj-card" onclick="openProjModal('solar')"><img class="proj-img" src="https://fysmetales.com/wp-content/uploads/2023/08/94d22324-8c51-4036-9140-b0f23604dd53.jpg" alt="Solar"><div class="proj-overlay"><div class="proj-cat">Renovable · Solar</div><div class="proj-name">Planta Unacem — Estructura Solar</div><div class="proj-meta">250 MWp · Acero Galvanizado</div><span class="proj-arrow">→</span></div></div>
+      </div>
   </div>
 </section>
+
 
 <section id="metricas">
   <div class="section-wrap">
@@ -153,7 +174,7 @@
 
 <section id="sostenibilidad">
   <div class="section-wrap">
-    <div class="reveal"><div class="section-label" data-num="04">Compromiso</div><h2 class="section-title">ACERO VERDE · <span style="color:var(--cyan)">FUTURO REAL</span></h2></div>
+    <div class="reveal"><div class="section-label" data-num="04">Compromiso </div><h2 class="section-title">ACERO VERDE · <span style="color:var(--cyan)">FUTURO REAL</span></h2></div>
     <div class="sust-grid">
       <div class="reveal">
         <div class="sust-ring-wrap">
@@ -185,11 +206,32 @@
         <div style="margin-top:2rem;" class="reveal reveal-delay-5">
           <div class="section-label" data-num="" style="margin-bottom:1rem;">CERTIFICACIONES</div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 3834</span>
-            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 45001</span>
-            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 9001</span>
-            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 14001</span>
-            <span class="tag" style="padding:.5rem 1rem;font-size:.65rem;">ISO 37001</span>
+
+            <div class="iso-item">
+              <span class="tag">ISO 3834</span>
+              <div class="tooltip-box">Calidad en procesos de soldadura</div>
+            </div>
+
+            <div class="iso-item">
+              <span class="tag">ISO 45001</span>
+              <div class="tooltip-box">Seguridad y salud en el trabajo</div>
+            </div>
+
+            <div class="iso-item">
+              <span class="tag">ISO 9001</span>
+              <div class="tooltip-box">Gestión de calidad</div>
+            </div>
+
+            <div class="iso-item">
+              <span class="tag">ISO 14001</span>
+              <div class="tooltip-box">Gestión ambiental</div>
+            </div>
+
+            <div class="iso-item">
+              <span class="tag">ISO 37001</span>
+              <div class="tooltip-box">Sistema antisoborno</div>
+            </div>
+
           </div>
         </div>
       </div>
